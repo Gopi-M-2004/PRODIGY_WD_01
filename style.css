@@ -262,4 +262,111 @@ span{
   color: var(--main-color);
   box-shadow: 0 0 1rem var(--main-color);
 
+
 } 
+
+/* ---------------- RESPONSIVE STYLES ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 50vw;
+    margin-top: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-category {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding: 8rem 5% 2rem;
+  }
+
+  .home-img img {
+    width: 70vw;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-color);
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-img img {
+    width: 80vw;
+  }
+
+  .services-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}
